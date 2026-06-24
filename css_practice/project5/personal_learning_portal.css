@@ -1,0 +1,41 @@
+#portal{
+    background-color:antiquewhite;
+    border: 2px solid black;
+}
+#header{
+    /* color:rgb(93, 8, 39); */
+    text-align:center;
+    margin: 10px;
+    margin-top:20px;
+}
+h1{
+    color:rgb(93, 8, 39);
+    text-decoration: 2px underline;
+}
+h2{
+    color:darkgreen;
+}
+#navigation{
+    text-align:end;
+    word-spacing:10px;
+}
+p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.panel{
+    margin:10px;
+    border:1px solid black;
+    padding:15px;
+}
+.my-progress{
+    border:2px solid black;
+    padding: 2px;
+    width:auto;
+    margin:10px;
+}
+.my-goals{
+    border:2px solid black;
+    padding: 2px;
+    width:auto;
+    margin:10px;
+}
