@@ -1,0 +1,96 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#111;
+    color:white;
+    padding:20px;
+    font-family:Arial, sans-serif;
+}
+
+.dashboard{
+    display:grid;
+
+    grid-template-columns:1fr 3fr;
+
+    grid-template-areas:
+        "header header"
+        "menu game"
+        "menu stats"
+        "menu achievements"
+        "footer footer";
+
+    gap:20px;
+}
+
+.header{
+    grid-area:header;
+
+    background:#1f1f1f;
+    padding:20px;
+    text-align:center;
+    border-radius:15px;
+}
+
+.menu{
+    grid-area:menu;
+
+    background:#1f1f1f;
+    padding:20px;
+    border-radius:15px;
+}
+
+.game{
+    grid-area:game;
+
+    background:#1f1f1f;
+    padding:20px;
+    border-radius:15px;
+}
+
+.stats{
+    grid-area:stats;
+
+    background:#1f1f1f;
+    padding:20px;
+    border-radius:15px;
+}
+
+.achievements{
+    grid-area:achievements;
+
+    background:#1f1f1f;
+    padding:20px;
+    border-radius:15px;
+}
+
+.footer{
+    grid-area:footer;
+
+    background:#1f1f1f;
+    padding:20px;
+    text-align:center;
+    border-radius:15px;
+}
+
+.menu,
+.game,
+.stats,
+.achievements,
+.header,
+.footer{
+    transition:0.3s;
+}
+
+.menu:hover,
+.game:hover,
+.stats:hover,
+.achievements:hover,
+.header:hover,
+.footer:hover{
+    transform:translateY(-5px);
+    box-shadow:0 10px 20px rgba(0,0,0,0.5);
+}
