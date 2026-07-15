@@ -1,0 +1,221 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+
+body{
+    background: rgba(1, 39, 95, 0.676);
+    color: antiquewhite;
+    padding:20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.dashboard{
+    display: grid;
+    grid-template-columns:1fr 3fr;
+    grid-template-areas:
+    "header header"
+    "sidebar luffy"
+    "sidebar zoro"
+    "sidebar nami"
+    "sidebar usopp"
+    "sidebar sanji"
+    "sidebar chopper"
+    "sidebar robin"
+    "sidebar franky"
+    "sidebar brook"
+    "sidebar jinbe"
+    "footer footer";
+}
+
+.header{
+    grid-area: header;
+    margin:10px;
+    padding:20px;
+    background:white;
+    border-radius: 20px;
+    box-shadow:0px 8px 10px rgb(1, 53, 132);
+    color:black;
+    text-align:center;
+    border-top: 20px solid black;
+    transition: 0.2s;
+}
+
+.sidebar{
+    grid-area: sidebar;
+    margin:10px;
+    padding:20px;
+    background: rgba(243, 187, 47, 0.717);
+    border-radius: 20px;
+    box-shadow:3px 8px 10px rgb(1, 53, 132);
+    color:black;
+    transition: 0.2s;
+}
+
+.luffy{
+    grid-area: luffy;
+    margin:10px;
+    padding:20px;
+    background: red;
+    border-radius: 20px;
+    box-shadow:3px 8px 10px rgb(1, 53, 132);
+    border-top: 20px solid goldenrod;
+    transition: 0.2s;
+}
+
+.zoro{
+    grid-area: zoro;
+    margin:10px;
+    padding:20px;
+    background: rgb(114, 190, 52);
+    border-radius: 20px;
+    box-shadow:3px 8px 10px rgb(1, 53, 132);
+    border-top: 20px solid rgb(1, 48, 1);
+    transition: 0.2s;
+}
+
+.nami{
+    grid-area: nami;
+    margin:10px;
+    padding:20px;
+    background: rgb(219, 104, 4);
+    border-radius: 20px;
+    box-shadow:3px 8px 10px rgb(1, 53, 132);
+    border-top: 20px solid rgb(139, 65, 0);
+    color:black;
+    transition: 0.2s;
+}
+
+.usopp{
+    grid-area: usopp;
+    margin:10px;
+    padding:20px;
+    background: rgb(219, 202, 13);
+    border-radius: 20px;
+    box-shadow:3px 8px 10px rgb(1, 53, 132);
+    border-top: 20px solid rgb(105, 27, 2);
+    color:black;
+    transition: 0.2s;
+}
+
+.sanji{
+    grid-area: sanji;
+    margin:10px;
+    padding:20px;
+    background: rgb(5, 19, 174);
+    border-radius: 20px;
+    box-shadow:3px 8px 10px rgb(1, 53, 132);
+    border-top: 20px solid rgb(219, 202, 13);
+    transition: 0.2s;
+}
+
+.chopper{
+    grid-area: chopper;
+    margin:10px;
+    padding:20px;
+    background: rgb(161, 20, 161);
+    border-radius: 20px;
+    box-shadow:3px 8px 10px rgb(1, 53, 132);
+    border-top: 20px solid rgb(107, 0, 103);
+    color:black;
+    transition: 0.2s;
+}
+
+.robin{
+    grid-area: robin;
+    margin:10px;
+    padding:20px;
+    background: rgb(83, 3, 114);
+    border-radius: 20px;
+    box-shadow:3px 8px 10px rgb(1, 53, 132);
+    border-top: 20px solid rgb(52, 0, 72);
+    transition: 0.2s;
+}
+
+.franky{
+    grid-area: franky;
+    margin:10px;
+    padding:20px;
+    background: rgb(139, 209, 233);
+    border-radius: 20px;
+    box-shadow:3px 8px 10px rgb(1, 53, 132);
+    border-top: 20px solid rgb(173, 1, 167);
+    color:black;
+    transition: 0.2s;
+}
+
+.brook{
+    grid-area: brook;
+    margin:10px;
+    padding:20px;
+    background: rgb(73, 73, 73);
+    border-radius: 20px;
+    box-shadow:3px 8px 10px rgb(1, 53, 132);
+    border-top: 20px solid rgb(255, 255, 255);
+    transition: 0.2s;
+}
+
+.jinbe{
+    grid-area: jinbe;
+    margin:10px;
+    padding:20px;
+    background: rgb(116, 69, 0);
+    border-radius: 20px;
+    box-shadow:3px 8px 10px rgb(1, 53, 132);
+    border-top: 20px solid rgb(79, 226, 255);
+    transition: 0.2s;
+}
+
+.footer{
+    grid-area: footer;
+    margin:10px;
+    padding:20px;
+    background:white;
+    border-top: 20px solid black;
+    border-radius: 20px;
+    box-shadow:0px 8px 10px rgb(1, 53, 132);
+    color:black;
+    text-align:center;
+    transition: 0.2s;
+}
+
+.header:hover,
+.sidebar:hover,
+.luffy:hover,
+.zoro:hover,
+.nami:hover,
+.usopp:hover,
+.sanji:hover,
+.chopper:hover,
+.robin:hover,
+.franky:hover,
+.brook:hover,
+.jinbe:hover,
+.footer:hover{
+    transform:translatey(-5px);
+    box-shadow:0 10px 20px rgb(0, 39, 99);
+}
+
+@media(max-width:768px){
+
+    .dashboard{
+        grid-template-columns:1fr;
+
+        grid-template-areas:
+        "header"
+        "sidebar"
+        "luffy"
+        "zoro"
+        "nami"
+        "usopp"
+        "sanji"
+        "chopper"
+        "robin"
+        "franky"
+        "brook"
+        "jinbe"
+        "footer";
+    }
+
+}
